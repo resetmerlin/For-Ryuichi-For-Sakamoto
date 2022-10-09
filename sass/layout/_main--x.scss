@@ -1,0 +1,198 @@
+.main{
+    position: absolute;
+    height: 91vh;
+    background-position: bottom;
+    width: 100%;
+    background-color: $color-black; 
+   
+    background-size: cover;
+    background-image: linear-gradient(to left bottom, rgba(black, 0.6), black) 
+        , url("/img/images2.jpg");
+
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    &__img{
+        padding: 10rem;
+        position: absolute;
+        top: 18%;
+        left: 8%;
+        background-image: url("/img/background-removebg.png");
+        width: 100rem;
+        height: 100rem;
+        background-position: center;
+        background-size: cover;
+        z-index: 1;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        &:hover{
+
+            // transform: scale(1.2rem) translateY(-2rem);
+            transform: scale(1.1);
+            border-radius: 50%;
+
+
+        }
+
+
+
+    }
+
+ 
+    &__circle-effect{
+        position: absolute;
+        border-radius: 50%;
+        background: radial-gradient(circle, transparent 0%, $color-black 100%);
+        padding: 0 10rem;
+        top: 6%;
+        left: 9%;
+        width: 120rem;
+        // border-radius:  50%;
+        height: 120rem;
+        // background-color: $color-white;
+
+        &--innerBlurr{
+            position: absolute;
+            border-radius: 50%;
+
+            top: 15%;
+            left: 15%;
+            width: 85rem;
+            // border-radius:  50%;
+            height: 85rem;
+            background-image: linear-gradient(to left bottom, rgba(black, 0.6), black) 
+            , url("/img/images2.jpg");
+            box-shadow: 0rem 0rem 8rem 10rem rgba($color-white, .4);
+
+            z-index: 0;
+            display: flex;
+            align-items: center;
+         
+
+        }
+        &:hover{
+            background: radial-gradient(circle, transparent 60%, $color-white 30%);
+            box-shadow: 0rem 0rem 10rem 10rem rgba($color-white, .3);
+
+        }
+        &:hover &--innerBlurr{
+            // box-shadow: rgba($color-white, 0.3) 0px 19px 38px, rgba($color-white, 0.22) 0px 15px 12px;
+            box-shadow: rgba($color-white, 0.9) 0rem 2.2rem 3rem 1rem;
+        }
+
+    }
+&__description{
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    width: 100rem;
+    height: 25rem;
+    font-size: 3rem;
+    transition: all 0.3s;
+    color: white;
+    span{
+        font-size: 5rem;
+        font-weight: 700;
+        
+
+    }
+    &:hover{
+        transform: translateY(-6rem);
+    }
+
+}
+
+animation-fill-mode:forwards; 
+
+&__nonstop-text{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100rem;
+    padding: 3rem;
+    color: white;
+    white-space: nowrap;
+    overflow: hidden;
+    font-size: 2rem;
+    display: flex;
+    justify-content: flex-start;
+    border-top: 2px solid $color-white;
+
+    border-bottom: 2px solid $color-white;
+    align-items: center;
+    &--scrolling{
+        width: 100%;
+
+        position: absolute;
+        text-align: start;
+        white-space: nowrap;
+
+        // transform: translateX(100%);
+      
+        animation: moveInfinite 22s linear ;
+        // animation-duration:10s;
+        animation-delay: .2s;
+        
+        
+    }
+
+       
+
+}
+
+}
+
+@keyframes moveInfinite
+{
+    0%   {left: 0%;}
+    100% {left: 100%;}
+
+  
+   
+}
+
+  @keyframes mymove {
+    from {
+        left: 50%;
+    
+    }
+    to {
+      left: 80%;
+    }
+
+  }
+.main--1{
+    position: absolute;
+    left: 0;
+    top: 7vh;
+    background-color: $color-black; 
+    width: 50%;
+    height: 100%;
+  
+
+   
+    &__img{
+        position: absolute;
+        top: 30%;
+        left: 15%;
+
+
+        width: 55rem;
+        height:  55rem;
+        background-size: cover;
+        border-radius: 2rem;
+        box-shadow: 2rem 3rem 6rem rgba($color-white, .3);
+
+
+    }
+
+}
+.main--2{
+    position: absolute;
+    right: 0;
+    top: 7vh;
+    width: 50%;
+    height: 100%;
+    background-color: $color-black;
+
+}

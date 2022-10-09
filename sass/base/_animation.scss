@@ -1,0 +1,56 @@
+
+
+@keyframes moveInLeft{
+    0%{
+        opacity: 0;
+        transform: translateX(-10rem);
+    }
+
+
+
+    80%{
+        transform: translateX(1rem);
+    }
+
+    100%{
+        opacity: 1;
+        transform: translate(0);
+    }
+}
+
+
+@keyframes moveInRight{
+    0%{
+        opacity: 0;
+        transform: translateX(10rem);
+        /* direction goes left to right 그니까 처음에 그 html값을 조금 왼쪽으로 옮기고 싶으면 -사용 */
+    }
+
+
+    80%{
+        transform: translateX(-1rem);
+    }
+
+    100%{
+        opacity: 1;
+        transform: translate(0);
+    }
+}  
+
+
+@keyframes moveInBottom{
+    0%{
+        opacity: 0;
+        transform: translateY(3rem);
+        /* direction goes left to right 그니까 처음에 그 html값을 조금 왼쪽으로 옮기고 싶으면 -사용 */
+    }
+
+
+
+
+    100%{
+        opacity: 1;
+        transform: translate(0);
+    }
+}  
+

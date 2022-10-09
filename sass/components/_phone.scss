@@ -1,0 +1,115 @@
+.box{
+    position: absolute;
+    left: 60%;
+    top: 15%;
+    width: 57rem;
+    height: 110rem;
+    background-color: rgb(102, 102, 102);
+    border-radius: 10rem;
+    box-shadow: 0px 5px 10rem 5px rgba(255, 255, 255, 0.7);
+
+z-index: 10;
+    &::before{ 
+        
+        
+        content: '';
+        position: absolute;
+        inset: 0.1rem;
+        background-color: rgb(107, 106, 106);
+        border-radius: 10rem;
+
+    }
+    .inner{
+        // background-image: url("/img/img1.jpg");
+                // background-image: url("/img/img1.jpg");
+
+        height: 100%;
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.9) 0px 18px 36px -18px inset, rgba(0, 0, 0, 0.5) 0px -50px 36px -28px inset;
+        position: absolute;
+        inset: 0.2rem;
+        background-color: white;
+        background-size: cover;
+        background-position: center;
+        border-radius: 10rem;
+        height: auto;
+        border: 2rem solid $color-black;
+        display: flex;
+        justify-content: center;
+        opacity: 1;
+        transition: 0.5s;
+        .icons{
+            display: flex;
+            align-items: center;
+            position: absolute;
+            justify-content: center;
+            top: 1.8%;
+            right: 12%;
+            font-size: 3.8rem;
+            & .bxs-battery{
+                margin-top: 1rem;
+                font-size: 3.5rem;
+
+            }
+            & .bx-signal-4{
+                margin-right: -1rem;
+            }
+        }
+        .island_popup{
+            position: absolute;
+            top: 2rem;
+            width: 16rem;
+            height: 5rem;
+            background-color: $color-black;
+            border-radius: 10rem;
+            transition: 0.5s ease-in-out;
+       
+        }
+
+
+    }
+    &:hover .inner{
+        opacity: 1;
+    }
+
+    .btn{
+
+        position: absolute;
+        top: 17rem;
+        left: -.7rem;
+        width: .5rem;
+        height: 6rem;
+        
+        border-top-left-radius: 2rem;
+        border-bottom-left-radius: 2rem;
+        background: radial-gradient(rgba(160, 160, 160, 0.726), rgb(92, 92, 92),rgb(37, 37, 37));
+        z-index: 10;
+
+        &.btn2{
+            top: 30rem;
+            height: 8rem;
+
+        }
+        &.btn3{
+            top: 41rem;
+            height: 8rem;
+
+        }
+
+    }
+
+ 
+    .rightSideBtn{
+        position: absolute;
+        top: 25rem;
+        right: -.3rem;
+        width: .5rem;
+        height: 12rem;
+        
+        border-top-right-radius: 2rem;
+        border-bottom-right-radius: 2rem;
+        background: radial-gradient(rgba(160, 160, 160, 0.726), rgb(92, 92, 92),rgb(37, 37, 37));
+        z-index: 10;
+    }
+
+
+}

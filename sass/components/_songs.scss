@@ -1,0 +1,48 @@
+.main__song{
+    cursor: pointer;
+
+    &-img{
+        // background-image: url("/img/img1.jpg");
+        // background-size: cover;
+        // background-position: center;
+        width: 28rem;
+        height: 25rem;
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        padding: 2.5rem 2rem;
+ 
+
+    }
+    &-default{
+        display: flex;
+        transition: all .2s ease-in-out;
+    }
+    &-default:hover{
+        background-color: rgba(rgb(192, 192, 192),.3);
+        transform: translateY(-2rem) scale(1.03);
+        
+    }
+
+    &-img-right{
+        display: flex;
+        margin-bottom: 10rem;
+        justify-content: space-between;
+        width: 75%;
+    }
+    &-title--1{
+        font-size: 4rem;
+        font-weight: 600;
+        color: $color-white;
+
+    }
+    &-side-title--1{
+        font-size: 2rem;
+        color: $color-white;
+
+    }
+    &--upper-title{
+        padding: 0 2rem;
+ 
+    }
+}
