@@ -89,10 +89,6 @@ body {
 .u-margin-top-huge {
   margin-top: 10rem; }
 
-.main__bottom {
-  position: fixed;
-  width: 100%; }
-
 .btn:link, .btn:visited {
   text-transform: uppercase;
   text-decoration: none;
