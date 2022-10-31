@@ -1,12 +1,13 @@
 .box{
     position: absolute;
-    left: 60%;
-    top: 15%;
+    left: 68%;    top: 15%;
     width: 57rem;
     height: 110rem;
     background-color: rgb(102, 102, 102);
     border-radius: 10rem;
     box-shadow: 0px 5px 10rem 5px rgba(255, 255, 255, 0.7);
+    
+
 
 z-index: 10;
     &::before{ 

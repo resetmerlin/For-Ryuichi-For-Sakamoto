@@ -1,6 +1,5 @@
 
 
-
 *,*::after,
 *::before{
     margin: 0;
@@ -9,19 +8,82 @@
 
 }
 html{
+    
 
-    //This defines what 1rem is
-    font-size:  62.5%; 
+/*
+320px — 480px: Mobile devices
+481px — 768px: iPads, Tablets
+769px — 1024px: Small screens, laptops
+1025px — 1200px: Desktops, large screens
+1201px and more —  Extra large screens, TV
+*/
+
+    @media only screen //Mobile devices
+    and (min-width : 32rem) 
+    and (max-width : 48rem) 
+
+    {
+      
+        font-size: 62.5%;
+
+    
+       
+        
+    }
+
+    @media only screen //iPads, Tablets
+    and (min-width : 48.1rem) 
+    and (max-width :76.8rem) 
+
+    {   
+        font-size: 14.5%;
+ 
+    }
 
 
+    @media only screen // Small screens, laptops
+    and (min-width : 76.9rem) 
+    and (max-width :102.4rem) 
 
+    {
+      
+        font-size: 23.5%;
+
+    
+       
+        
+    }
+
+    @media only screen //Desktops, large screens
+    and (min-width : 102.5rem) 
+    and (max-width :120rem) 
+
+    {
+      
+        font-size: 19.5%;
+
+
+    
+       
+        
+    }
+
+    @media only screen //Desktops, large screens
+    and (min-width : 120.1rem) 
+
+    {
+      
+        font-size: 62.5%; 
+
+    
+       
+        
+    }
 }
-
-
-
 body{
     
 
     box-sizing: border-box;
 
 }
+

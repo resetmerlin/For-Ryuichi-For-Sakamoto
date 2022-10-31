@@ -18,10 +18,20 @@ body{
     position: absolute;
     left: 3%;
     color: wheat;
-    width: 35%;
-    height: 100%;
+    width: 150rem;    height: 100%;
     display: flex;
     padding: 2rem;
+
+
+    @media only screen 
+    and (min-width : 64rem) 
+    and (max-width : 74rem) 
+    {
+        font-size: 22%;
+
+    }
+    
+
 
     ul{
         display:inline-block;
@@ -42,4 +52,17 @@ body{
         box-sizing: border-box;
     }
 
+}
+
+.main--left{
+&__description{
+    .m-size-font{
+        font-size: 5rem;
+        display: block;
+    }
+    span{
+        display: block;        
+
+    }
+}
 }

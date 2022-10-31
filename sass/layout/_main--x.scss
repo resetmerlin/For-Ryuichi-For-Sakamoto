@@ -1,21 +1,21 @@
 .main{
     position: absolute;
-    height: 91vh;
+    height: 100vh;
     background-position: bottom;
     width: 100%;
-    background-color: $color-black; 
-   
+    background-color: #000;
     background-size: cover;
-    background-image: linear-gradient(to left bottom, rgba(black, 0.6), black) 
-        , url("/img/images2.jpg");
-
+    font-family: 'Poppins', sans-serif;
+    background-image: linear-gradient(to left bottom, rgba(0, 0, 0, 0.6), black), url(/img/images2.jpg);
     background-repeat: no-repeat;
     background-position: center;
     display: flex;
+
+
     &__img{
         padding: 10rem;
         position: absolute;
-        top: 18%;
+        top: 15%;
         left: 8%;
         background-image: url("/img/background-removebg.png");
         width: 100rem;
@@ -24,7 +24,34 @@
         background-size: cover;
         z-index: 1;
         cursor: pointer;
-        transition: all 0.3s ease;
+        transition: all 0.001s;
+
+
+        // @media only screen 
+        // and (min-width : 64rem) 
+        // and (max-width : 74rem) 
+        // {
+        //     top: 25%;
+        //     left: 12%;
+
+        //     width: 67rem;
+        //     height: 71rem;
+        // }
+        
+
+        // @media only screen 
+        // and (min-device-width : 48rem) 
+        // and (max-device-width : 64rem) 
+        // and (orientation : landscape)
+        // {   
+        //     top: 28%;
+        //     left: 8%;
+        //     width: 67rem;
+        //     height: 70rem;
+        // }
+    
+
+       
         &:hover{
 
             // transform: scale(1.2rem) translateY(-2rem);
@@ -44,13 +71,51 @@
         border-radius: 50%;
         background: radial-gradient(circle, transparent 0%, $color-black 100%);
         padding: 0 10rem;
-        top: 6%;
-        left: 9%;
+        top: 14%;
+        right: 15%;
         width: 120rem;
         // border-radius:  50%;
         height: 120rem;
-        // background-color: $color-white;
 
+
+        // @media only screen 
+        // and (min-width : 64rem) 
+        // and (max-width : 74rem) 
+        // {
+
+        //     top: 15%;
+        //     left: 10%;
+
+        //     width: 90rem;
+        //     height: 91rem;
+        // }
+
+
+        // @media only screen 
+        // and (min-device-width : 48rem) 
+        // and (max-device-width : 64rem) 
+        // and (orientation : landscape)
+        // {   
+        //     top: 14%;
+        //     left: 7%;
+        //     width: 80rem;
+        //     height: 80rem;
+        // }
+
+   
+
+        // background-color: $color-white;
+        &__text{
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            height: 5rem;
+            font-family: 'Noto Serif JP', serif;
+
+            z-index: 100;
+            color: $color-white;
+            font-size: 10rem;
+        }
         &--innerBlurr{
             position: absolute;
             border-radius: 50%;
@@ -60,9 +125,39 @@
             width: 85rem;
             // border-radius:  50%;
             height: 85rem;
+
+            // @media only screen 
+            // and (min-width : 64rem) 
+            // and (max-width : 74rem) 
+            // {
+            //     top: 15%;
+            //     left: 15%;
+
+            //     width: 60rem;
+            //     height: 60rem;
+            // }
+            // @media only screen 
+            // and (min-device-width : 48rem) 
+            // and (max-device-width : 64rem) 
+            // and (orientation : landscape)
+            // {   
+            //     top: 16%;
+            //     left: 13%;
+            //     width: 58rem;
+            //     height: 58rem;
+            //     box-shadow: 0rem 0rem 6rem 3rem rgba($color-white, .4);
+
+
+
+                
+
+            // }
+
             background-image: linear-gradient(to left bottom, rgba(black, 0.6), black) 
             , url("/img/images2.jpg");
             box-shadow: 0rem 0rem 8rem 10rem rgba($color-white, .4);
+            background-size: cover;
+            background-position: center;
 
             z-index: 0;
             display: flex;
@@ -80,65 +175,10 @@
             box-shadow: rgba($color-white, 0.9) 0rem 2.2rem 3rem 1rem;
         }
 
-    }
-&__description{
-    position: absolute;
-    top: 30%;
-    left: 50%;
-    width: 100rem;
-    height: 25rem;
-    font-size: 3rem;
-    transition: all 0.3s;
-    color: white;
-    span{
-        font-size: 5rem;
-        font-weight: 700;
-        
+
+
 
     }
-    &:hover{
-        transform: translateY(-6rem);
-    }
-
-}
-
-animation-fill-mode:forwards; 
-
-&__nonstop-text{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    width: 100rem;
-    padding: 3rem;
-    color: white;
-    white-space: nowrap;
-    overflow: hidden;
-    font-size: 2rem;
-    display: flex;
-    justify-content: flex-start;
-    border-top: 2px solid $color-white;
-
-    border-bottom: 2px solid $color-white;
-    align-items: center;
-    &--scrolling{
-        width: 100%;
-
-        position: absolute;
-        text-align: start;
-        white-space: nowrap;
-
-        // transform: translateX(100%);
-      
-        animation: moveInfinite 22s linear ;
-        // animation-duration:10s;
-        animation-delay: .2s;
-        
-        
-    }
-
-       
-
-}
 
 }
 
@@ -161,38 +201,3 @@ animation-fill-mode:forwards;
     }
 
   }
-.main--1{
-    position: absolute;
-    left: 0;
-    top: 7vh;
-    background-color: $color-black; 
-    width: 50%;
-    height: 100%;
-  
-
-   
-    &__img{
-        position: absolute;
-        top: 30%;
-        left: 15%;
-
-
-        width: 55rem;
-        height:  55rem;
-        background-size: cover;
-        border-radius: 2rem;
-        box-shadow: 2rem 3rem 6rem rgba($color-white, .3);
-
-
-    }
-
-}
-.main--2{
-    position: absolute;
-    right: 0;
-    top: 7vh;
-    width: 50%;
-    height: 100%;
-    background-color: $color-black;
-
-}

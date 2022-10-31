@@ -1,9 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Julius+Sans+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 @import "abstracts/functions";
 @import "abstracts/mixins";
 @import "abstracts/variables";
 
-
+@import "components/import";
 
 
 
@@ -20,7 +22,7 @@
 @import "layout/header";
 
 @import "layout/grid";
-
+@import "layout/main--left";
 
 @import "components/composition";
 @import "components/songs";
@@ -29,3 +31,4 @@
 @import "components/phone";
 @import "components/story";
 @import "layout/main--x";
+@import "pages/mobile";

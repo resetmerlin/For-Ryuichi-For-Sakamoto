@@ -1,25 +1,46 @@
 .header{
     width: 100%;
-    position: relative;
+    position: fixed;
     top: 0;
-    height: 9vh;
+    height: 10vh;
     display: flex;
-    align-items: center;
-    justify-content: space-between;
-    background-color: $color-black;
+    align-items: flex-end;
+    justify-content: space-around;
+    background-color: #000;
+    z-index: 100;
+    padding: 1rem;
     // border-bottom: 2px solid black;
     &__logo{
         display: flex;
         align-items: center;
-        font-size: 4rem;
+        font-size: 6rem;
+
         font-weight: 600;
         cursor: pointer;
         margin-left: 10rem;
+
+
+        // @media only screen 
+        // and (min-device-width : 48rem) 
+        // and (max-device-width : 64rem) 
+        // and (orientation : landscape)
+        // {   
+        //     font-size: 1.5rem;
+        //     margin-left: 4rem;
+
+        // }
+
+
+        img{
+            height: 13rem;            width: 12rem;
+        }
+    
         a{
             text-decoration: none;
             color: $color-white;
-            transition: all 0.5s ease;
-
+            margin-left: 4rem;
+            padding-right: 82rem;
+              
 
         }
 
@@ -29,13 +50,7 @@
 
 
 
-        a:hover{
-            
 
-            transform: scale(1.2);
-
-            
-        }
    
     }
 
@@ -44,10 +59,24 @@
 
         list-style: none;
         padding: 2rem 0;
+
+
+
+
         a{
             text-decoration: none;
             font-size: 3rem;
             color: $color-white;
+            font-weight: 700;
+            
+        // @media only screen 
+        // and (min-device-width : 48rem) 
+        // and (max-device-width : 64rem) 
+        // and (orientation : landscape)
+        // {   
+        //     font-size: 1rem;
+
+        // }
 
 
 
@@ -58,6 +87,23 @@
         transition: all 0.2s ease;
         cursor: pointer;
         padding: 2rem;
+
+
+        // @media only screen 
+        // and (min-device-width : 48rem) 
+        // and (max-device-width : 64rem) 
+        // and (orientation : landscape)
+        // {   
+        //     margin: 0 1.5rem;
+
+        // }
+
+
+        
+
+
+        
+
 
     }
 }
