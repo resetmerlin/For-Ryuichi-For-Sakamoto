@@ -12,7 +12,9 @@
 .u-margin-top-big{ margin-top: 8rem;}
 .u-margin-top-huge{ margin-top: 10rem;}
 
-
+.margin-left-small{
+    margin-left: $margin-left-small;
+}
 /* Smartphones (portrait) ---------------- */
 @media only screen 
 and (max-width : 20rem)

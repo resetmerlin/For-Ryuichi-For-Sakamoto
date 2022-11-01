@@ -105,6 +105,57 @@
   opacity: 1;
   cursor: pointer; }
 
+.main--side {
+  position: fixed;
+  display: block;
+  top: 0;
+  left: 0;
+  width: 13%;
+  height: 100%;
+  background-color: #000;
+  font-family: 'Poppins', sans-serif;
+  z-index: 100; }
+  .main--side__logo {
+    position: absolute;
+    top: 2%;
+    color: #fff;
+    font-size: 5rem;
+    width: 100%;
+    font-weight: 700;
+    display: flex;
+    height: 15rem;
+    justify-content: flex-start;
+    text-align: center;
+    align-items: center; }
+  .main--side img {
+    width: 10rem;
+    height: 10rem;
+    margin: 2rem; }
+  .main--side ul {
+    position: absolute;
+    top: 13%;
+    font-weight: 100;
+    font-size: 3rem;
+    display: inline-block;
+    padding: 2rem; }
+    .main--side ul .bx {
+      font-size: 6rem;
+      margin-right: 2rem; }
+    .main--side ul a {
+      display: flex;
+      text-decoration: none;
+      color: rgba(255, 255, 255, 0.5);
+      align-items: center;
+      text-align: center;
+      transition: all .2s ease-in-out; }
+    .main--side ul a:hover {
+      color: #fff;
+      font-weight: 500; }
+  .main--side li {
+    display: flex;
+    justify-content: flex-start;
+    margin-bottom: 3rem; }
+
 @keyframes moveInLeft {
   0% {
     opacity: 0;
@@ -143,29 +194,30 @@ body {
 
 .main__song {
   position: absolute;
-  left: 3%;
-  color: wheat;
-  width: 150rem;
-  height: 100%;
-  display: flex;
+  left: 13%;
+  top: 9%;
+  font-family: 'Poppins', sans-serif;
+  color: #fff;
+  width: 80%;
+  height: 91vh;
+  display: block;
   padding: 2rem; }
-  @media only screen and (min-width: 64rem) and (max-width: 74rem) {
-    .main__song {
-      font-size: 22%; } }
   .main__song ul {
-    display: inline-block;
+    display: flex;
     list-style: none;
-    flex-direction: column;
     width: 100%; }
   .main__song li {
+    position: relative;
     font-size: 5rem;
-    width: 100%;
-    height: 24rem;
-    display: flex;
+    width: 13%;
+    height: 10%;
+    display: block;
     align-items: center;
     text-align: center;
     overflow: hidden;
-    box-sizing: border-box; }
+    box-sizing: border-box;
+    font-family: Poppins, sans-serif;
+    font-weight: 700; }
 
 .main--left__description .m-size-font {
   font-size: 5rem;
@@ -224,6 +276,9 @@ body {
 
 .u-margin-top-huge {
   margin-top: 10rem; }
+
+.margin-left-small {
+  margin-left: 3rem; }
 
 /* Smartphones (portrait) ---------------- */
 @media only screen and (max-width: 20rem) {
@@ -295,18 +350,15 @@ body {
   text-decoration: none;
   padding: 2.3rem;
   font-size: 3rem;
-  transition: all .2s ease-in;
+  transition: all 1s ease-in;
   background-color: #fff;
   box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15);
   border-radius: 5%;
   align-items: center; }
 
-.btn-text:hover {
-  transform: translateY(-2rem); }
-
 .btn-text:active {
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
-  transform: translateY(0); }
+  transform: translateY(-2rem); }
 
 .music-play {
   font-size: 7rem;
@@ -436,32 +488,67 @@ body {
 .main__song {
   cursor: pointer; }
   .main__song-img {
-    width: 28rem;
-    height: 25rem;
+    width: 32rem;
+    height: 35rem;
     display: flex;
-    justify-content: center;
-    align-content: center;
-    padding: 2.5rem 2rem; }
+    place-content: center;
+    padding: 2.5rem 2rem;
+    border-radius: 9%; }
   .main__song-default {
     display: flex;
     transition: all .2s ease-in-out; }
   .main__song-default:hover {
-    background-color: rgba(192, 192, 192, 0.3);
     transform: translateY(-2rem) scale(1.03); }
   .main__song-img-right {
     display: flex;
-    margin-bottom: 10rem;
-    justify-content: space-between;
-    width: 75%; }
+    justify-content: space-between; }
   .main__song-title--1 {
-    font-size: 4rem;
+    font-size: 3rem;
     font-weight: 600;
     color: #fff; }
   .main__song-side-title--1 {
     font-size: 2rem;
-    color: #fff; }
+    font-weight: 300;
+    color: #b1b1b1; }
   .main__song--upper-title {
-    padding: 0 2rem; }
+    padding: 4rem 0;
+    font-size: 5rem;
+    font-weight: 700; }
+  .main__song .play-right {
+    position: absolute;
+    display: inline-block;
+    top: 50%;
+    justify-content: center;
+    align-items: center;
+    font-size: 4rem;
+    width: 7rem;
+    border-radius: 50%;
+    color: #fff;
+    height: 7rem;
+    background-color: rgba(0, 0, 0, 0.7);
+    opacity: 0; }
+    .main__song .play-right .bx {
+      display: inline-block;
+      margin-top: 1.3rem; }
+  .main__song li:hover .play-right {
+    opacity: 1; }
+  .main__song .play-right {
+    position: absolute;
+    display: inline-block;
+    top: 45%;
+    justify-content: center;
+    align-items: center;
+    font-size: 5rem;
+    width: 9rem;
+    border-radius: 50%;
+    color: white;
+    height: 9rem;
+    background-color: rgba(0, 0, 0, 0.7);
+    transition: all 0.3s ease 0s;
+    opacity: 0; }
+    .main__song .play-right .bx {
+      display: inline-block;
+      margin-top: 2rem; }
 
 .music-play {
   color: #fff;
@@ -766,7 +853,7 @@ i.fa-step-backward {
     z-index: 10; }
 
 .main {
-  position: absolute;
+  position: relative;
   height: 100vh;
   background-position: bottom;
   width: 100%;

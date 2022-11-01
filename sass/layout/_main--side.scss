@@ -1,0 +1,66 @@
+.main--side{
+    position: fixed;
+    display: block;
+    top: 0;
+    left: 0;
+    width: 13%;
+    height: 100%;
+    background-color: $color-black;
+    font-family: 'Poppins', sans-serif;
+    z-index: 100;
+    &__logo{
+        position: absolute;
+        top: 2%;
+        color: #fff;
+        font-size: 5rem;
+        width: 100%;
+        font-weight: 700;
+        display: flex;
+        height: 15rem;
+    justify-content: flex-start;
+        text-align: center;
+        align-items: center;
+    }
+    img{
+
+        width: 10rem;
+        height: 10rem;
+        margin: 2rem;
+      
+    }
+
+
+    ul{
+        
+        .bx{
+            font-size: 6rem;
+            margin-right: 2rem;
+        }
+        a{        display: flex;
+
+             text-decoration: none;
+             color: rgba($color-white, .5);
+             align-items: center;
+             text-align: center;
+             transition: all .2s ease-in-out;
+            }
+            a:hover{
+                color: $color-white;
+                font-weight: 500;
+            }
+
+        position: absolute;
+        top: 13%;
+        font-weight: 100;
+        font-size: 3rem;
+        display: inline-block;
+        padding: 2rem;
+
+    }
+    li{
+        display: flex;
+        justify-content: flex-start;
+       
+        margin-bottom: 3rem;
+    }
+}

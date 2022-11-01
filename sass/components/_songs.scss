@@ -5,13 +5,12 @@
         // background-image: url("/img/img1.jpg");
         // background-size: cover;
         // background-position: center;
-        width: 28rem;
-        height: 25rem;
+        width: 32rem;
+        height: 35rem;
         display: flex;
-        justify-content: center;
-        align-content: center;
+        place-content: center;
         padding: 2.5rem 2rem;
- 
+        border-radius: 9%;
 
     }
     &-default{
@@ -19,30 +18,74 @@
         transition: all .2s ease-in-out;
     }
     &-default:hover{
-        background-color: rgba(rgb(192, 192, 192),.3);
         transform: translateY(-2rem) scale(1.03);
         
     }
 
     &-img-right{
         display: flex;
-        margin-bottom: 10rem;
-        justify-content: space-between;
-        width: 75%;
+    justify-content: space-between;
     }
     &-title--1{
-        font-size: 4rem;
+        font-size: 3rem;
         font-weight: 600;
         color: $color-white;
 
     }
     &-side-title--1{
         font-size: 2rem;
-        color: $color-white;
+        font-weight: 300;
+        color: #b1b1b1;
 
     }
     &--upper-title{
-        padding: 0 2rem;
- 
+    padding: 4rem 0;
+        font-size: 5rem;
+        font-weight: 700;
+
     }
+    .play-right{
+        position: absolute;
+        display: inline-block;
+        top: 50%;
+        justify-content: center;
+        align-items: center;
+        font-size: 4rem;
+        width: 7rem;
+        border-radius: 50%;
+        color: $color-white;
+        height: 7rem;
+        background-color: rgba($color-black,.7);
+        opacity: 0;
+        .bx{
+            display: inline-block;
+            margin-top: 1.3rem;
+   
+        }
+    }
+    li:hover .play-right{
+        opacity: 1;
+    }
+    .play-right{
+        position: absolute;
+        display: inline-block;
+        top: 45%;
+        justify-content: center;
+        align-items: center;
+        font-size: 5rem;
+        width: 9rem;
+        border-radius: 50%;
+        color: rgb(255, 255, 255);
+        height: 9rem;
+        background-color: rgba(0, 0, 0, 0.7);
+        transition: all 0.3s ease 0s;
+        opacity: 0;
+    
+        .bx{
+            display: inline-block;
+            margin-top: 2rem;
+   
+        }
+    }
+
 }
