@@ -73,6 +73,7 @@
 
 }
 .track-artist{
+    color: black;
     margin-top: .5rem;
     font-size: 2rem;
 }
@@ -110,6 +111,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    color: black;
+
 
     &--last{
         position: absolute;
@@ -118,6 +121,8 @@
         display: flex;
         justify-content: center;
         align-items: center;
+        color: black;
+
     }
 }
 
@@ -137,9 +142,9 @@
     -moz-appearance: none;
     appearance: none;
     width: 1.5rem;
-    height: 1.5ren;
+    height: 1.5rem;
     background: white;
-    border: 0.3rem solid #3774ff;
+    border: 0.5rem solid #a3a3a3a1;
     cursor: pointer;
     border-radius: 100%;
 }

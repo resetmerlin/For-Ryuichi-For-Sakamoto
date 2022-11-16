@@ -1,31 +1,3 @@
-const headerTitle = document.querySelector(".header__title");
-const navTitle1 = document.querySelector(".nav-first");
-const getImg = document.querySelector(".main__circle-effect");
-const getImgFocus = document.querySelector(".main__img");
-const changeSakamoto = document.querySelector(".main--left");
-const getInnerBlurr = document.querySelector(".main--innerBlurr");
-
-changeSakamoto.addEventListener("mouseover", () => {
-  getImgFocus.style = `border-radius: 50%`;
-  getImgFocus.style.transform = `scale(1.1)`;
-  getImg.style.background = `radial-gradient(circle, transparent 60%, #fff 30%)`;
-  getImg.style = `box-shadow: 0rem 0rem 10rem 10rem rgba($color-white, .3)`;
-  getInnerBlurr.style = `box-shadow: rgba($color-white, 0.9) 0rem 2.2rem 3rem 1rem`;
-});
-
-getImg.addEventListener("mouseover", () => {
-  getImgFocus.style = `border-radius: 50%`;
-  getImgFocus.style.transform = `scale(1.1)`;
-});
-function changeText(event) {
-  headerTitle.classList.toggle("active");
-  headerTitle.innerText = "坂本龍";
-}
-
-function changeNav1(event) {
-  navTitle1.classList.toggle("active1");
-  navTitle1.innerText = "歌です";
-}
 let now_playing = document.querySelector(".now-playing");
 let track_art = document.querySelector(".track-art");
 let track_name = document.querySelector(".track-name");
@@ -43,13 +15,22 @@ let wave = document.getElementById("wave");
 let randomIcon = document.querySelector(".fa-random");
 let curr_track = document.createElement("audio");
 
-const mainSong1 = document.querySelector(".main__song-1");
-const mainSong2 = document.querySelector(".main__song-2");
+const mainSong1 = document.querySelector("#main__song-1");
+const mainSong2 = document.querySelector("#main__song-2");
 
-const mainSong3 = document.querySelector(".main__song-3");
+const mainSong3 = document.querySelector("#main__song-3");
 
-const mainSong4 = document.querySelector(".main__song-4");
-const mainSong5 = document.querySelector(".main__song-5");
+const mainSong4 = document.querySelector("#main__song-4");
+const mainSong5 = document.querySelector("#main__song-5");
+
+const recommendMainSong1 = document.querySelector("#recommend--main__song-1");
+const recommendMainSong2 = document.querySelector("#recommend--main__song-2");
+
+const recommendMainSong3 = document.querySelector("#recommend--main__song-3");
+const recommendMainSong4 = document.querySelector("#recommend--main__song-4");
+
+const recommendMainSong5 = document.querySelector("#recommend--main__song-5");
+
 let count1 = 0;
 let count2 = 0;
 let count3 = 0;
@@ -68,6 +49,14 @@ mainSong3.addEventListener("click", loadTrack3);
 mainSong4.addEventListener("click", loadTrack4);
 
 mainSong5.addEventListener("click", loadTrack5);
+
+recommendMainSong1.addEventListener("click", loadTrack1);
+recommendMainSong2.addEventListener("click", loadTrack2);
+
+recommendMainSong3.addEventListener("click", loadTrack3);
+recommendMainSong4.addEventListener("click", loadTrack4);
+
+recommendMainSong5.addEventListener("click", loadTrack5);
 
 const music_list = [
   {
@@ -322,5 +311,3 @@ function setUpdate() {
     total_duration.textContent = durationMinutes + ":" + durationMinutes;
   }
 }
-headerTitle.addEventListener("click", changeText);
-navTitle1.addEventListener("click", changeNav1);
