@@ -9,11 +9,21 @@
     visibility: hidden;
     transition: all .3s;
     z-index: 2500;
+
+
 }
 
 .popup:target{
     opacity: 1;
     visibility: visible;
+    a{
+        text-decoration: none;
+        color: white;
+        position: fixed;
+        top: 0;
+        right: 0;
+        font-size: 7rem;
+    }
 }
 
 .box{

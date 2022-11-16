@@ -17,6 +17,13 @@
 .popup:target {
   opacity: 1;
   visibility: visible; }
+  .popup:target a {
+    text-decoration: none;
+    color: white;
+    position: fixed;
+    top: 0;
+    right: 0;
+    font-size: 7rem; }
 
 .box {
   left: 50% !important;
