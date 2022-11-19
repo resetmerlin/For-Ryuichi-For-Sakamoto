@@ -8,7 +8,7 @@
 
 }
 html{
-    
+    font-size: 50.5%;
 
 /*
 320px — 480px: Mobile devices
@@ -18,67 +18,21 @@ html{
 1201px and more —  Extra large screens, TV
 */
 
-    @media only screen //Mobile devices
-    and (min-width : 32rem) 
-    and (max-width : 48rem) 
+@include respond(tab-land){ //width<1200
+    font-size: 23%; // 1rem = 9px, 9/16 = 50%
+}
 
-    {
-      
-        font-size: 62.5%;
-
-    
-       
-        
-    }
-
-    @media only screen //iPads, Tablets
-    and (min-width : 48.1rem) 
-    and (max-width :76.8rem) 
-
-    {   
-        font-size: 14.5%;
- 
-    }
+@include respond(phone){
+    font-size: 18%;  //1rem = 4.8px
+}
+@include respond(tab-port){ //width<900?
+    font-size: 16.25%;  //1rem = 8px, 8/16 = 50%
+}
 
 
-    @media only screen // Small screens, laptops
-    and (min-width : 76.9rem) 
-    and (max-width :102.4rem) 
-
-    {
-      
-        font-size: 23.5%;
-
-    
-       
-        
-    }
-
-    @media only screen //Desktops, large screens
-    and (min-width : 102.5rem) 
-    and (max-width :120rem) 
-
-    {
-      
-        font-size: 19.5%;
-
-
-    
-       
-        
-    }
-
-    @media only screen //Desktops, large screens
-    and (min-width : 120.1rem) 
-
-    {
-      
-        font-size: 62.5%; 
-
-    
-       
-        
-    }
+@include respond(big-desktop){
+    font-size: 26.25%; //1rem = 12, 12/16
+}
 }
 body{
     

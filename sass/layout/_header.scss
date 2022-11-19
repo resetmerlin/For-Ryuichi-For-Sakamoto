@@ -13,11 +13,11 @@
     &__logo{
         display: flex;
         align-items: center;
-        font-size: 6rem;
+        font-size: 4rem;
 
         font-weight: 600;
         cursor: pointer;
-        margin-left: 10rem;
+        margin-left: 8rem;
         
 
 
@@ -33,15 +33,15 @@
 
 
         img{
-            height: 13rem;           
-             width: 12rem;
+            height: 11rem;           
+             width: 10rem;
         }
     
         a{
             text-decoration: none;
             color: $color-white;
-            margin-left: 4rem;
-            padding-right: 82rem;
+            margin-left: 2rem;
+            padding-right: 80rem;
               
 
         }
@@ -67,7 +67,7 @@
 
         a{
             text-decoration: none;
-            font-size: 3rem;
+            font-size: 1rem;
             color: $color-white;
             font-weight: 700;
             
@@ -84,7 +84,7 @@
 
     }
     li{
-        margin: 0 5rem;
+        margin: 0 3rem;
         display: inline-block;
         transition: all 0.2s ease;
         cursor: pointer;

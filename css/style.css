@@ -2,6 +2,13 @@
 @import url("https://fonts.googleapis.com/css2?family=Julius+Sans+One&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+/*
+$breakpoint argument choices
+-phone
+-tab-port
+-tab-land
+-big-desktop
+*/
 .popup {
   background-color: #000;
   width: 100%;
@@ -264,6 +271,7 @@ body {
   box-sizing: inherit; }
 
 html {
+  font-size: 50.5%;
   /*
 320px — 480px: Mobile devices
 481px — 768px: iPads, Tablets
@@ -271,21 +279,18 @@ html {
 1025px — 1200px: Desktops, large screens
 1201px and more —  Extra large screens, TV
 */ }
-  @media only screen and (min-width: 32rem) and (max-width: 48rem) {
+  @media (max-width: 75em) {
     html {
-      font-size: 62.5%; } }
-  @media only screen and (min-width: 48.1rem) and (max-width: 76.8rem) {
+      font-size: 23%; } }
+  @media (max-width: 37.5em) {
     html {
-      font-size: 14.5%; } }
-  @media only screen and (min-width: 76.9rem) and (max-width: 102.4rem) {
+      font-size: 18%; } }
+  @media (max-width: 56.25em) {
     html {
-      font-size: 23.5%; } }
-  @media only screen and (min-width: 102.5rem) and (max-width: 120rem) {
+      font-size: 16.25%; } }
+  @media (min-width: 112.5em) {
     html {
-      font-size: 19.5%; } }
-  @media only screen and (min-width: 120.1rem) {
-    html {
-      font-size: 62.5%; } }
+      font-size: 26.25%; } }
 
 body {
   box-sizing: border-box; }
@@ -323,20 +328,6 @@ body {
   height: 40%;
   border-radius: 1%; }
 
-/* Smartphones (portrait) ---------------- */
-@media only screen and (max-width: 20rem) {
-  /* Add Your CSS Styling Here */ }
-
-/* Smartphones (landscape) ---------------- */
-@media only screen and (min-width: 20rem) and (max-width: 48rem) {
-  /* Add Your CSS Styling Here */ }
-
-/* Tablets (portrait) -------------------- */
-@media only screen and (min-device-width: 48rem) and (max-device-width: 64rem) and (orientation: portrait) {
-  /* Add Your CSS Styling Here */ }
-
-/* Tablets (landscape) ------------------- */
-/* Old Desktops and laptops ------------------ */
 .btn:link, .btn:visited {
   text-transform: uppercase;
   text-decoration: none;
@@ -422,29 +413,29 @@ body {
   .header__logo {
     display: flex;
     align-items: center;
-    font-size: 6rem;
+    font-size: 4rem;
     font-weight: 600;
     cursor: pointer;
-    margin-left: 10rem; }
+    margin-left: 8rem; }
     .header__logo img {
-      height: 13rem;
-      width: 12rem; }
+      height: 11rem;
+      width: 10rem; }
     .header__logo a {
       text-decoration: none;
       color: #fff;
-      margin-left: 4rem;
-      padding-right: 82rem; }
+      margin-left: 2rem;
+      padding-right: 80rem; }
   .header__navigation {
     display: flex;
     list-style: none;
     padding: 2rem 0; }
     .header__navigation a {
       text-decoration: none;
-      font-size: 3rem;
+      font-size: 1rem;
       color: #fff;
       font-weight: 700; }
     .header__navigation li {
-      margin: 0 5rem;
+      margin: 0 3rem;
       display: inline-block;
       transition: all 0.2s ease;
       cursor: pointer;
